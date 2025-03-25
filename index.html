@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李白专题测试</title>
+    <style>
+        body {
+            font-family: 'STKaiti', '华文楷体', serif;
+            background-image: url('https://ts1.tc.mm.bing.net/th/id/R-C.6359875ae54304c35ae56485520e951a?rik=ZzGKAdkUywVh%2fQ&riu=http%3a%2f%2fwww.gufengjia.com%2fd%2ffile%2fimages%2f201907011203%2f13-1P60G60521-50.jpg&ehk=eNYH2jcY8AGpGXw%2bjCYrV7vqxszu39ejVmH17TgZ4kg%3d&risl=&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            border: 2px solid #6b5a4b;
+        }
+        h2 {
+            text-align: center;
+            color: #5a3e2b;
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #8b7355;
+            font-size: 20px;
+            margin: 20px 0 10px;
+            border-bottom: 1px solid #8b7355;
+            padding-bottom: 5px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-weight: bold;
+            color: #5a3e2b;
+        }
+        .options label {
+            display: block;
+            margin: 8px 0;
+        }
+        button {
+            display: block;
+            margin: 25px auto;
+            padding: 12px 25px;
+            background-color: #8b7355;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .result {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        /* 判断题特殊样式 */
+        .judgment label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>李白专题知识测试</h2>
+    <form id="quizForm">
+        <!-- 一、生平轨迹 -->
+        <div class="section-title">一、生平轨迹</div>
+        
+        <div class="question">
+            <p>1. 李白出生于今天的哪个地区？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="A"> A. 中国陕西</label>
+                <label><input type="radio" name="q1" value="B"> B. 吉尔吉斯斯坦</label>
+                <label><input type="radio" name="q1" value="C"> C. 乌兹别克斯坦</label>
+                <label><input type="radio" name="q1" value="D"> D. 哈萨克斯坦</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. 李白晚年因何事件被流放夜郎？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="A"> A. 参与安史之乱</label>
+                <label><input type="radio" name="q2" value="B"> B. 得罪杨贵妃</label>
+                <label><input type="radio" name="q2" value="C"> C. 卷入永王李璘叛乱</label>
+                <label><input type="radio" name="q2" value="D"> D. 酒后失言</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. 判断题：李白在长安担任过宰相。</p>
+            <div class="options judgment">
+                <label><input type="radio" name="q3" value="对"> 对</label>
+                <label><input type="radio" name="q3" value="错"> 错</label>
+            </div>
+        </div>
+
+        <!-- 二、思想性格 -->
+        <div class="section-title">二、思想性格</div>
+
+        <div class="question">
+            <p>4. 李白自称"谪仙人"，主要受哪种思想影响？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="A"> A. 儒家</label>
+                <label><input type="radio" name="q4" value="B"> B. 道家</label>
+                <label><input type="radio" name="q4" value="C"> C. 法家</label>
+                <label><input type="radio" name="q4" value="D"> D. 佛教</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. 李白的哪句诗最能体现他的傲视权贵？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="A"> A. "举头望明月，低头思故乡"</label>
+                <label><input type="radio" name="q5" value="B"> B. "安能摧眉折腰事权贵，使我不得开心颜"</label>
+                <label><input type="radio" name="q5" value="C"> C. "天生我材必有用，千金散尽还复来"</label>
+                <label><input type="radio" name="q5" value="D"> D. "长风破浪会有时，直挂云帆济沧海"</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. 判断题：李白的思想中，儒家济世精神和道家逍遥精神并存。</p>
+            <div class="options judgment">
+                <label><input type="radio" name="q6" value="对"> 对</label>
+                <label><input type="radio" name="q6" value="错"> 错</label>
+            </div>
+        </div>
+
+        <!-- 三、诗歌艺术 -->
+        <div class="section-title">三、诗歌艺术</div>
+
+        <div class="question">
+            <p>7. 李白的诗歌风格被归为？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="A"> A. 现实主义</label>
+                <label><input type="radio" name="q7" value="B"> B. 浪漫主义</label>
+                <label><input type="radio" name="q7" value="C"> C. 婉约派</label>
+                <label><input type="radio" name="q7" value="D"> D. 边塞诗派</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8. "飞流直下三千尺"运用了什么修辞手法？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="A"> A. 比喻</label>
+                <label><input type="radio" name="q8" value="B"> B. 拟人</label>
+                <label><input type="radio" name="q8" value="C"> C. 夸张</label>
+                <label><input type="radio" name="q8" value="D"> D. 借代</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. 判断题：李白最擅长的诗歌体裁是五言律诗。</p>
+            <div class="options judgment">
+                <label><input type="radio" name="q9" value="对"> 对</label>
+                <label><input type="radio" name="q9" value="错"> 错</label>
+            </div>
+        </div>
+
+        <!-- 四、诗歌主题 -->
+        <div class="section-title">四、诗歌主题</div>
+
+        <div class="question">
+            <p>10. 李白诗歌中最常见的自然意象是？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="A"> A. 杨柳</label>
+                <label><input type="radio" name="q10" value="B"> B. 明月</label>
+                <label><input type="radio" name="q10" value="C"> C. 孤雁</label>
+                <label><input type="radio" name="q10" value="D"> D. 烽火</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>11. "举杯邀明月，对影成三人"表达了李白怎样的情感？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q11" value="A"> A. 思乡</label>
+                <label><input type="radio" name="q11" value="B"> B. 孤独</label>
+                <label><input type="radio" name="q11" value="C"> C. 豪迈</label>
+                <label><input type="radio" name="q11" value="D"> D. 愤懑</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>12. 判断题：李白的诗歌中很少涉及山水主题。</p>
+            <div class="options judgment">
+                <label><input type="radio" name="q12" value="对"> 对</label>
+                <label><input type="radio" name="q12" value="错"> 错</label>
+            </div>
+        </div>
+
+        <!-- 五、仕途与政治 -->
+        <div class="section-title">五、仕途与政治</div>
+
+        <div class="question">
+            <p>13. 李白为何拒绝参加科举考试？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q13" value="A"> A. 家境贫寒</label>
+                <label><input type="radio" name="q13" value="B"> B. 自信才高，不屑常规仕途</label>
+                <label><input type="radio" name="q13" value="C"> C. 身体残疾</label>
+                <label><input type="radio" name="q13" value="D"> D. 家族禁止</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>14. 李白离开长安的主要原因是？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q14" value="A"> A. 主动辞官</label>
+                <label><input type="radio" name="q14" value="B"> B. 遭权贵排挤</label>
+                <label><input type="radio" name="q14" value="C"> C. 战乱爆发</label>
+                <label><input type="radio" name="q14" value="D"> D. 皇帝罢免</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>15. 判断题：李白晚年投靠永王李璘，最终被流放夜郎。</p>
+            <div class="options judgment">
+                <label><input type="radio" name="q15" value="对"> 对</label>
+                <label><input type="radio" name="q15" value="错"> 错</label>
+            </div>
+        </div>
+
+        <!-- 六、历史地位与影响 -->
+        <div class="section-title">六、历史地位与影响</div>
+
+        <div class="question">
+            <p>16. 李白与杜甫并称为什么？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q16" value="A"> A. 李杜</label>
+                <label><input type="radio" name="q16" value="B"> B. 唐宋八大家</label>
+                <label><input type="radio" name="q16" value="C"> C. 诗佛与诗仙</label>
+                <label><input type="radio" name="q16" value="D"> D. 豪放派代表</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>17. 李白的诗歌在哪个国家影响深远，甚至被编入教材？（ ）</p>
+            <div class="options">
+                <label><input type="radio" name="q17" value="A"> A. 日本</label>
+                <label><input type="radio" name="q17" value="B"> B. 印度</label>
+                <label><input type="radio" name="q17" value="C"> C. 波斯</label>
+                <label><input type="radio" name="q17" value="D"> D. 罗马</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>18. 判断题：李白的诗歌被翻译成多种语言，成为盛唐气象的象征。</p>
+            <div class="options judgment">
+                <label><input type="radio" name="q18" value="对"> 对</label>
+                <label><input type="radio" name="q18" value="错"> 错</label>
+            </div>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">提交答案</button>
+    </form>
+    <div class="result" id="resultArea"></div>
+</div>
+
+<script>
+    const correctAnswers = {
+        q1: "B", q2: "C", q3: "错", q4: "B", q5: "B",
+        q6: "对", q7: "B", q8: "C", q9: "错", q10: "B",
+        q11: "B", q12: "错", q13: "B", q14: "B", q15: "对",
+        q16: "A", q17: "A", q18: "对"
+    };
+
+    function checkAnswers() {
+        let score = 0;
+        const resultArea = document.getElementById('resultArea');
+        resultArea.innerHTML = "<h3>测试结果</h3>";
+
+        for (let i = 1; i <= 18; i++) {
+            const questionName = `q${i}`;
+            const selected = document.querySelector(`input[name="${questionName}"]:checked`);
+            
+            if (selected) {
+                const isCorrect = selected.value === correctAnswers[questionName];
+                if (isCorrect) score++;
+                resultArea.innerHTML += `<p>第${i}题：${isCorrect ? 
+                    '<span style="color:green">✓ 正确</span>' : 
+                    '<span style="color:red">✗ 错误（正确答案：'+correctAnswers[questionName]+'）</span>'}</p>`;
+            } else {
+                resultArea.innerHTML += `<p>第${i}题：<span style="color:#888">未作答</span></p>`;
+            }
+        }
+
+        const percentage = Math.round((score / 18) * 100);
+        resultArea.innerHTML += `<p style="font-weight:bold; margin-top:20px; font-size:18px; color:#5a3e2b;">
+            最终得分：${score}/18（${percentage}%）
+            ${percentage >= 80 ? '🎉 优秀！' : percentage >= 60 ? '👍 良好' : '💪 继续努力'}</p>`;
+    }
+</script>
+</body>
+</html>
